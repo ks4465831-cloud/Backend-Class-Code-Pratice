@@ -1,24 +1,25 @@
 const express = require('express');
-
+const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
+app.use(morgan('dev'));
+// app.use(morgan('combined'));
 
-
-const logMiddleware = (req, res, next) => {
-    console.log("Req url:", req.url);
-    // res.send("hello from middleware");
-    next();
-};
+// const logMiddleware = (req, res, next) => {
+//     console.log("Req url:", req.url,"Time:", new Date().toLocaleString());
+//     // res.send("hello from middleware");
+//     next();
+// };
 
 const welcomeMiddleware = (req, res, next) => {
     console.log("Welcome to my website");
     next();
 };
 
-
+// app.use(authMiddleware);   global middleware
 app.use(welcomeMiddleware);
-app.use(logMiddleware);
+// app.use(logMiddleware);
 
 
 app.get('/', (req, res) => {
@@ -32,6 +33,7 @@ app.get('/about', (req, res) => {
 
     res.send('Hello about page!');
 });
+
 // app.get('/about',authMiddleware, (req, res) => {
 //     console.log("about page visited");
 
