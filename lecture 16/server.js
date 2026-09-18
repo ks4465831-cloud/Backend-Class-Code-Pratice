@@ -1,9 +1,9 @@
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 // app.use(morgan('combined'));
 
 // const logMiddleware = (req, res, next) => {
@@ -38,6 +38,14 @@ app.get('/about', (req, res) => {
 //     console.log("about page visited");
 
 //     res.send('Hello about page!');
+// });
+// authMiddleware = route level middleware
+
+// app.use((req, res) => {
+//     res.status(404).send("Route not found");          invalid route middleware
+
+// app.use((req, res) => {
+    //     res.status(404).json({success: false, message: "Route not found"});
 // });
 
 app.listen(port, () => {
