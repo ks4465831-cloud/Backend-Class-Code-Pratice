@@ -13,7 +13,7 @@ const port = 3000;
 // };
 
 const welcomeMiddleware = (req, res, next) => {
-    console.log("Welcome to my website");
+    console.log("Welcome to my Website");
     next();
 };
 
