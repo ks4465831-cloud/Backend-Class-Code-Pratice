@@ -11,7 +11,7 @@ const users=[
 ]
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to my server")
+    res.send("this is the server")
 })
 
 app.get("/users",(req,res)=>{
