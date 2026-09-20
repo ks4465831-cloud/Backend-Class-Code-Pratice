@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     console.log("about page visited");
 
-    res.send('Hello about page!');
+    res.send('About page!');
 });
 
 // app.get('/about',authMiddleware, (req, res) => {
