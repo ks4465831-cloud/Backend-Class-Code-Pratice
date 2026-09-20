@@ -26,25 +26,25 @@ const dns=require('dns');
 // const data=fs.readFileSync("./sample.txt","utf-8");  //synchronous
 // console.log(data);
 
-// fs.readFile("./sample.txt","utf-8",(err,data)=>{  //asynchronous
-//     if(err){
-//         console.log(err);    
-//     }else{
-//             console.log(data);
-//         }
-// })
+fs.readFile("./sample.txt","utf-8",(err,data)=>{  //asynchronous
+    if(err){
+        console.log(err);    
+    }else{
+            console.log(data);
+        }
+})
 // console.log("B")
 
 
 // fs.writeFileSync("./sample.txt","Hello World!"); 
 // console.log("File updated") //synchronous
-// fs.writeFile("./sample.txt","Hello World! again",(err)=>{  //asynchronous
-//     if(err){
-//         console.log(err);
-//     }else{
-//         console.log("File updated");
-//     }
-// })
+fs.writeFile("./sample.txt","Hello World! again",(err)=>{  //asynchronous
+    if(err){
+        console.log(err);
+    }else{
+        console.log("File updated");
+    }
+})
 
 // fs.appendFileSync("./sample.txt","\nHello World! again");
 
