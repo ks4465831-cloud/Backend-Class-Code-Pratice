@@ -2,7 +2,7 @@ const process=require('process');
 // console.log("Hello ")
 
 const data=process.argv
-// console.log(Number(data[2])+Number(data[3]));
+console.log(Number(data[2])+Number(data[3]));
 
 console.log(process.version)
 console.log(process.platform)
