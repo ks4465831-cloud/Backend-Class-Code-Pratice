@@ -41,7 +41,7 @@ app.put("/students/:rollNo",(req,res)=>{
     const data=req.body;
     const student=students.find((student)=>student.rollNo===Number(id));
     if(!student){
-        res.status(404).json({success:false, message:"student not found"});
+        res.status(404).json({success:false, message:"Student not found"});
     }
     student.name=data.name;
     student.section=data.section;
@@ -55,7 +55,7 @@ app.delete("/students/:rollNo",(req,res)=>{
         res.status(404).json({success:false, message:"student not found"});
     }else{
         students.splice(studentIndex,1);
-        res.json({success:true, message:"student deleted successfully"});
+        res.json({success:true, message:"Student deleted successfully"});
     }
     
 })
