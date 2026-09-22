@@ -29,14 +29,13 @@ app.get('/', (req, res) => {
 
 
 app.get('/about', (req, res) => {
-    console.log("about page visited");
+    console.log("About Page Visited");
 
     res.send('About page');
 });
 
 // app.get('/about',authMiddleware, (req, res) => {
-//     console.log("about page visited");
-
+//     console.log("About Page Visited");
 //     res.send('Hello about page!');
 // });
 // authMiddleware = route level middleware
