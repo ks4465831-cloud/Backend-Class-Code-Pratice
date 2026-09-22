@@ -59,7 +59,7 @@ app.use((err, req, res, next) => {
 // invalid route middleware - ye humesha code ke last ma likhenge kyuki phale likhenge to ye sabse phale execute hoga aur ye 404 error dega
 // iske baad kuch bhi nhi chalta
 app.use((req, res) => {
-    res.status(404).json({success:false, message: "Route not found"});
+    res.status(404).json({success:false, message: "Route Not Found"});
 });
 
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
