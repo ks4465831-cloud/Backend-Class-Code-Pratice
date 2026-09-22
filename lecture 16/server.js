@@ -24,14 +24,14 @@ app.use(welcomeMiddleware);
 
 app.get('/', (req, res) => {
     console.log("Homepage visited");
-    res.send('Hello World!');
+    res.send('Hello World');
 });
 
 
 app.get('/about', (req, res) => {
     console.log("about page visited");
 
-    res.send('About page!');
+    res.send('About page');
 });
 
 // app.get('/about',authMiddleware, (req, res) => {
