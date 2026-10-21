@@ -1,75 +1,133 @@
 use("UniversityDB")
 
-
-
-///Create Operation
-
-// db.students.insert([ //insert,insertOne,insertMany
+// db.students.insert([
 //     {
-//         name: "Alex",
-//         section: "D",
-//         course: "Btech",
-//         semester: 4,
-//         marks: 70,
-//         contact: 1896567890,
-//         city: "Gurugram"
-//     },
-//     {
-//         name: "John",
-//         section: "A",
-//         course: "Btech",
-//         semester: 4,
-//         marks: 95,
-//         contact: 2887264827,
-//         city: "Delhi"
-//     }
+//     name: "Amisha",
+//     section: "D",
+//     course: " BCA",
+//     semester: 3,
+//     marks: 90,
+//     contact: 1234567899,
+//     city: "Gurugram"
+//    },
+//    {
+//     name: "Shikha",
+//     section: "D",
+//     course: " BCA",
+//     semester: 5,
+//     marks: 96,
+//     contact: 9876543201,
+//     city: "Delhi"
+//    }
 // ])
 
+// db.students.find()
+// db.students.findOne()
 
-//Read Operation
-
-// db.students.find() //find,findOne
-
-// db.students.find({course:"BCA"}) //greater than 80
-
-////////update
+// db.students.find({name: "Amisha"})
+// db.students.find({course: " BCA"})
 
 // db.students.updateOne(
-//     {name:"Ansh"},
+//     {name: "Amisha"},
 //     {
-//         $set:{
-//             course: "Btech",
-//             marks: 90,
-//             name: "Anshika"
+//         $set: {
+//             course: "MCA",
+//             marks: 95
 //         }
-//     }
+//    }
 // )
 
 // db.students.deleteOne({
-//     _id: ObjectId("6ad8556c96fd0c71fb2a80ee")
+//     _id: ObjectId('6ad85601ea5e3ebde88cb24b')
+
 // })
 
 // db.students.find(
 //     {
-//         city:{
-//              $eq:"Gurugram"
+//         marks: {
+//         $gt: 80
 //         }
 //     }
 // )
 
-// db.students.find(   //ANd
-//     {marks:{$gt:80}, city:{$eq:"Gurugram"}}
-    
+// db.students.find(
+//     {
+//         marks: {
+//         $gte: 80
+//         }
+//     }
 // )
 
-// db.students.find(   //OR
-//     {$or:[{marks:{$gt:80}}, {city:{$eq:"Gurugram"}}]}
-    
+// db.students.find(
+//     {
+//         city: {
+//         $eq: "Gurugram"
+//         }
+//     }
 // )
 
-// db.students.find({},{_id:0, name:1, marks:1, section:1})
-// db.students.find({section:"A"},{_id:0, name:1, marks:1, section:1})
+// db.students.find(
+//     {
+//         marks: {
+//             $gt: 80
+//         },
+//         city: {
+//             $eq: "Delhi"
+//         }
 
-// db.students.find().skip(3).limit(3)
+//     }
+// )
 
-db.students.find().sort({marks:-1}) //ascending 1, descending -1
+// db.students.find(
+//     {
+//         $or: [{marks: {$gt: 80}}, {city: {$eq: "Delhi"}}]
+//     }
+// )
+
+// db.students.find(
+//     {},{
+//         _id: 0,
+//         name: 1,
+//         marks: 1,
+//         section: 1
+        
+        
+//     }
+// )
+
+// db.students.find(
+//     {},{
+//         // _id: 0,
+//         name: 1,
+//         marks: 1,
+//         section: 1
+        
+        
+//     }
+// )
+
+// db.students.find(
+//     {section: "D"},{
+//         // _id: 0,
+//         name: 1,
+//         marks: 1,
+//         section: 1
+        
+        
+//     }
+// )
+
+// db.students.find().limit(3)
+// db.students.find().skip(2)
+// db.students.find().skip(0).limit(2)
+// db.students.find().skip(1).limit(2)
+// db.students.find().skip(4).limit(6)
+
+// descending order
+// db.students.find().sort({marks: -1})
+
+// ascending order
+// db.students.find().sort({marks: 1})
+
+
+
