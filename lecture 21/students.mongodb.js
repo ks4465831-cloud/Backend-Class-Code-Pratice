@@ -117,7 +117,7 @@ use("UniversityDB")
 //     }
 // )
 
-// db.students.find().limit(3)
+db.students.find().limit(3)
 // db.students.find().skip(2)
 // db.students.find().skip(0).limit(2)
 // db.students.find().skip(1).limit(2)
@@ -127,7 +127,7 @@ use("UniversityDB")
 // db.students.find().sort({marks: -1})
 
 // ascending order
-db.students.find().sort({marks: 1})
+// db.students.find().sort({marks: 1})
 
 
 
