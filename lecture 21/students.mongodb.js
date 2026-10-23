@@ -21,18 +21,23 @@ use("UniversityDB")
 //    }
 // ])
 
-db.students.find()
+// db.students.find()
 // db.students.findOne()
 
 // db.students.find({name: "Amisha"})
 // db.students.find({course: " BCA"})
 
 // db.students.updateOne(
-//     {name: "Amisha"},
+//     {name: "Ram"},
 //     {
 //         $set: {
-//             course: "MCA",
-//             marks: 95
+            // course: "Btech"
+            // city: "Delhi"
+            // name: "Priya"
+            // semester: 2
+            // section: "B"
+            // marks: 75
+//             contact: 7654312098
 //         }
 //    }
 // )
