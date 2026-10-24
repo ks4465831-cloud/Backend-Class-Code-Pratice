@@ -4,12 +4,12 @@ const fs=require('fs');
 const cypto=require('crypto');
 const dns=require('dns');
 
-// console.log(os.platform()) //win 32 || linux ||darwin
-// console.log(os.arch())  //x64 || x86 ||arm64
-// console.log(os.cpus().length)  //4|| 8||12
-// console.log(os.homedir())
-// console.log(os.totalmem()/(1024*1024*1024) + " GB");
-// console.log(os.freemem()/(1024*1024) + " MB");
+console.log(os.platform()) //win 32 || linux ||darwin
+console.log(os.arch())  //x64 || x86 ||arm64
+console.log(os.cpus().length)  //4|| 8||12
+console.log(os.homedir())
+console.log(os.totalmem()/(1024*1024*1024) + " GB");
+console.log(os.freemem()/(1024*1024) + " MB");
 
 // const filePath=path.resolve(__dirname,"core_modules.js");
 // console.log(__dirname);
