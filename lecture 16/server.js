@@ -6,11 +6,11 @@ const port = 3000;
 // app.use(morgan('dev'));
 // app.use(morgan('combined'));
 
-// const logMiddleware = (req, res, next) => {
-//     console.log("Req url:", req.url,"Time:", new Date().toLocaleString());
-//     // res.send("hello from middleware");
-//     next();
-// };
+const logMiddleware = (req, res, next) => {
+    console.log("Req url:", req.url,"Time:", new Date().toLocaleString());
+    // res.send("hello from middleware");
+    next();
+};
 
 const welcomeMiddleware = (req, res, next) => {
     console.log("Welcome to my Website");
@@ -19,7 +19,7 @@ const welcomeMiddleware = (req, res, next) => {
 
 // app.use(authMiddleware);   global middleware
 app.use(welcomeMiddleware);
-// app.use(logMiddleware);
+app.use(logMiddleware);
 
 
 app.get('/', (req, res) => {
