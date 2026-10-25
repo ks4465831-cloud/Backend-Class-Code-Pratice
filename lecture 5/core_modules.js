@@ -48,8 +48,8 @@ fs.writeFile("./sample.txt","Hello World! again",(err)=>{  //asynchronous
 
 // fs.appendFileSync("./sample.txt","\nHello World! again");
 
-// fs.unlinkSync("./sample1.txt");  //synchronous
-// console.log("File deleted")
+fs.unlinkSync("./sample1.txt");  //synchronous
+console.log("File deleted")
 
 // const password="Alex@124"
 
