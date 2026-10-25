@@ -5,7 +5,7 @@ import {add,subtract} from "./math.js";
 // console.log(add(2, 3));
 // console.log(math.add(2, 3));
 // console.log(math.subtract(5, 3));
-console.log(add(2, 3));
+console.log(add(4,5));
 console.log(subtract(5, 3));
 
 // console.log("Hello World!");
