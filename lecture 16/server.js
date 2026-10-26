@@ -1,7 +1,7 @@
 const express = require('express');
 // const morgan = require('morgan');
 const app = express();
-const port = 3000;
+// const port = 3000;
 
 // app.use(morgan('dev'));
 // app.use(morgan('combined'));
@@ -47,6 +47,7 @@ app.get('/about', (req, res) => {
     //     res.status(404).json({success: false, message: "Route not found"});
 // });
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(3000, () => {
+    // console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on http://localhost:3000`);
 });
