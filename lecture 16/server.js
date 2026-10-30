@@ -23,7 +23,7 @@ app.use(logMiddleware);
 
 
 app.get('/', (req, res) => {
-    console.log("Homepage visited");
+    console.log("Homepage visite");
     res.send('Hello World');
 });
 
