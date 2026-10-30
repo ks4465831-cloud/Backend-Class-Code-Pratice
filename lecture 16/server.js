@@ -13,7 +13,7 @@ const logMiddleware = (req, res, next) => {
 };
 
 const welcomeMiddleware = (req, res, next) => {
-    console.log("Welcome to my Website");
+    console.log("Welcome to my Server");
     next();
 };
 
