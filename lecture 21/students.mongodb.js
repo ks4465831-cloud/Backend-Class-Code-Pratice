@@ -21,7 +21,7 @@ use("UniversityDB")
 //    }
 // ])
 
-// db.students.find()
+db.students.find()
 // db.students.findOne()
 
 // db.students.find({name: "Amisha"})
