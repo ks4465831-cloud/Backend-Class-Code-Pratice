@@ -1,6 +1,6 @@
 use("UniversityDB")
 
-// db.students.find()
+db.students.find()
 
 db.students.aggregate(
     [
