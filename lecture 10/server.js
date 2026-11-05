@@ -9,7 +9,7 @@ app.use(express.json());//middleware
 const students=[
     {rollNo:1, name:"Khushi", section:"BCA-D"},
     {rollNo:2, name:"Payal", section:"BCA-D"},
-    {rollNo:3, name:"Anita", section:"BCA-D"},
+    {rollNo:3, name:"Ananya", section:"BCA-D"},
     {rollNo:4, name:"Sakshi", section:"BCA-D"},
     {rollNo:5, name:"Isha", section:"BCA-D"}
 ]
