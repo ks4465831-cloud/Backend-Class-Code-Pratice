@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Student = require('./model/students.model');
 const app = express();
-// const port = 3000;
+const port = 3000;
 
 app.get("/api/students", async (req, res) => {
     try {
@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost:27017/UniversityDB').then(() => {
     console.error('Error connecting to MongoDB:', err);
 });
 
-app.listen(3000, () => {
-    console.log(`Server is running on http://localhost:3000`);
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
     
 });
