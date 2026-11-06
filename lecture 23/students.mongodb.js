@@ -77,7 +77,7 @@ db.students.aggregate(
 //     ]
 // )
 
-db.students.getIndexes()
+// db.students.getIndexes()
 
 // db.students.createIndex(
 //     {
