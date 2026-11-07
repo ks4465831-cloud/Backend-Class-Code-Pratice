@@ -129,7 +129,7 @@ db.students.findOne()
 // db.students.find().skip(4).limit(6)
 
 // descending order
-// db.students.find().sort({marks: -1})
+db.students.find().sort({marks: -1})
 
 // ascending order
 // db.students.find().sort({marks: 1})
