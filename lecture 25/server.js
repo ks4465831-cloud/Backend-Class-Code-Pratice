@@ -14,9 +14,9 @@ app.get("/api/students", async (req, res) => {
 });
 
 mongoose.connect('mongodb://localhost:27017/UniversityDB').then(() => {
-    console.log('Connected To MongoDB');
+    console.log('Connected to MongoDB');
 }).catch((err) => {
-    console.error('Error connecting To MongoDB:', err);
+    console.error('Error connecting to MongoDB:', err);
 });
 
 app.listen(port, () => {
