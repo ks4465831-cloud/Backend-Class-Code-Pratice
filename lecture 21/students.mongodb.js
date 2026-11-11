@@ -124,7 +124,7 @@ db.students.findOne()
 
 // db.students.find().limit(3)
 // db.students.find().skip(2)
-// db.students.find().skip(0).limit(2)
+db.students.find().skip(0).limit(2)
 // db.students.find().skip(1).limit(2)
 // db.students.find().skip(4).limit(6)
 
