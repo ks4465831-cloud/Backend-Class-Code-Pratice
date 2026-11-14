@@ -56,7 +56,7 @@ app.delete("/api/students/:id",async(req,res)=>{
 mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log('Connected to MongoDB');
 }).catch((err)=>{
-    console.error('Error Connecting To MongoDB:',err);
+    console.error('Error connecting to MongoDB:',err);
 })
 
 app.listen(port,()=>{
