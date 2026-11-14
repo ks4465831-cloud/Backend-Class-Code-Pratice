@@ -2,7 +2,8 @@ const express=require('express');
 const mongoose=require('mongoose');
 const Student=require('./model/students.model');
 const app=express();
-const port=3000;
+require('dotenv').config();
+const port=process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -52,7 +53,7 @@ app.delete("/api/students/:id",async(req,res)=>{
     }
 })
 
-mongoose.connect('mongodb://localhost:27017/UniversityDB').then(()=>{
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log('Connected to MongoDB');
 }).catch((err)=>{
     console.error('Error connecting to MongoDB:',err);
