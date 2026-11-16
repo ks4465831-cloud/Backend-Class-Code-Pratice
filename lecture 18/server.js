@@ -27,7 +27,7 @@ app.get("/age-check/:age", (req, res,next) => {
         if(age<18){
             throw new Error("You are not Eligible to Vote");
         }else{
-            res.send("You are eligible to Vote");
+            res.send("You are eligible to vote");
         }
     }catch(error) {
         // res.status(500).json({success:false, message: "Age is less than 18"});
