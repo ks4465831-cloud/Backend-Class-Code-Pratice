@@ -52,7 +52,7 @@ app.delete("/students/:rollNo",(req,res)=>{
     const id=req.params.rollNo;
     const studentIndex=students.findIndex((student)=>student.rollNo===Number(id));
     if(studentIndex===-1){
-        res.status(404).json({success:false, message:"student not found"});
+        res.status(404).json({success:false, message:"Student Not Found"});
     }else{
         students.splice(studentIndex,1);
         res.json({success:true, message:"Student Deleted Successfully"});
