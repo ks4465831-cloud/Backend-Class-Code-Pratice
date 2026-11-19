@@ -55,7 +55,7 @@ app.delete("/students/:rollNo",(req,res)=>{
         res.status(404).json({success:false, message:"student not found"});
     }else{
         students.splice(studentIndex,1);
-        res.json({success:true, message:"Student deleted successfully"});
+        res.json({success:true, message:"Student Deleted Successfully"});
     }
     
 })
