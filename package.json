@@ -1,0 +1,27 @@
+{
+  "name": "backend-class-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ks4465831-cloud/Backend-Class-Code-Pratice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ks4465831-cloud/Backend-Class-Code-Pratice/issues"
+  },
+  "homepage": "https://github.com/ks4465831-cloud/Backend-Class-Code-Pratice#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
