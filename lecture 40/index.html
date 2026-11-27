@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chat App </h1>
+    <input type="text" id="message" placeholder="Enter your message">
+    <input type="button" id="send" value="Send" onclick="handlemessage()">
+    <ul id="chatContainer"></ul> 
+
+    <script>
+        const ws = new WebSocket("ws://localhost:3000")
+        const msg = document.getElementById("message")
+        const btn = document.getElementById("send")
+        const chatContainer = document.getElementById("chatContainer")
+
+       
+    </script>
+</body>
+</html>
